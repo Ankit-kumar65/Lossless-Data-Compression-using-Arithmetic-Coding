@@ -1,6 +1,6 @@
 # Lossless-Data-Compression-using-Arithmetic-Coding
 
-This application implementes lossless data compression using arithmetic coding rule ( Lower and upper bound method ). It encodes and decodes a given input by user using
+This application implements lossless data compression using arithmetic coding rule ( Lower and upper bound method ). It encodes and decodes a given input by user using
 arithmetic coding.
 Input can be a number or a String.
 The accuracy achieved for decoding is upto 12 characters and after 12, it
