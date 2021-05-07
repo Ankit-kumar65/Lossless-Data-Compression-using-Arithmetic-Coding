@@ -22,7 +22,8 @@ For eg, here the user enters
 ‘Bhagalpur’ and receives the resulting encoded codeword.
 
 
-![WhatsApp Image 2021-05-07 at 11 40 47 PM (1)](https://user-images.githubusercontent.com/77197538/117491430-d395ee00-af8d-11eb-826f-0a895baffc95.jpeg)
+![WhatsApp Image 2021-05-07 at 11 45 42 PM](https://user-images.githubusercontent.com/77197538/117491865-66cf2380-af8e-11eb-97cc-147fcd799356.jpeg)
+
 
 
 Decoding Part: 
