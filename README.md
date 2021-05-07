@@ -8,9 +8,38 @@ may or may not be decode correctly due to probabilities or precision of
 double in JAVA.
 The Probability of each letter is 0.04.
 
+First View : 
+
+
+![WhatsApp Image 2021-05-07 at 11 40 47 PM (2)](https://user-images.githubusercontent.com/77197538/117491434-d5f84800-af8d-11eb-887a-3a80aa3dab4c.jpeg)
+
+
 Encoding part : 
 
 Simply enter the message and click on
 ‘Encode’. 
 For eg, here the user enters
-‘Assam’ and receives the resulting encoded codeword.
+‘Bhagalpur’ and receives the resulting encoded codeword.
+
+
+![WhatsApp Image 2021-05-07 at 11 40 47 PM (1)](https://user-images.githubusercontent.com/77197538/117491430-d395ee00-af8d-11eb-826f-0a895baffc95.jpeg)
+
+
+Decoding Part: 
+
+Enter the codeword and enter the
+expected length of result.
+Since here the codeword was for
+Bhagalpur, enter ‘9’ because Assam
+is 9 characters long.
+
+Note: For decoding, Users must write no of
+Digits. Users can type any numbers and see
+result upto that digit. If type no is greater than
+real String, it simply decodes the string and
+after that print ‘m’.
+
+![WhatsApp Image 2021-05-07 at 11 40 47 PM](https://user-images.githubusercontent.com/77197538/117491416-d1339400-af8d-11eb-84e5-38be5e5c366f.jpeg)
+
+
+
