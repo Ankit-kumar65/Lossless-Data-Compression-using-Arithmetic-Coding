@@ -190,11 +190,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-            if (Dig == "" || Dig == null) {
-                D = 6;
-            } else {
-                D = Integer.parseInt(Dig);
-            }
+
+            D = Integer.parseInt(Dig);
+
 
 
 
@@ -258,13 +256,9 @@ public class MainActivity extends AppCompatActivity {
 
             Double tag = Double.parseDouble(Code);
 
-            if(Dig == "" || Dig==null){
-                D = 6;
-            }
 
-            else {
-                D = Integer.parseInt(Dig);
-            }
+            D = Integer.parseInt(Dig);
+
 
 
             for (int i = 0; i < D; i++) {
@@ -336,9 +330,16 @@ public class MainActivity extends AppCompatActivity {
         toEncodeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
                 String txtToConvert = txt.getText().toString();
-                String convertedTxt = AriCode.encode(txtToConvert);
-                result.setText(convertedTxt);
+                if(txtToConvert.isEmpty()){
+                    Toast.makeText(MainActivity.this , "Please Type Input for Encode", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    String convertedTxt = AriCode.encode(txtToConvert);
+                    result.setText(convertedTxt);
+                }
             }
         });
 
@@ -348,9 +349,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String txtToConvert = txt.getText().toString();
                 String txtToConvert2 = txt2.getText().toString();
-                String convertedTxt = AriCode.decode(txtToConvert,txtToConvert2);
 
-                result.setText(convertedTxt);
+                if (txtToConvert.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Please Type Input for Decode", Toast.LENGTH_SHORT).show();
+                }
+                else if (txtToConvert2.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Please Type No of Digit", Toast.LENGTH_SHORT).show();
+                }
+
+                else{
+                    String convertedTxt = AriCode.decode(txtToConvert, txtToConvert2);
+
+                result.setText(convertedTxt);}
+
             }
         });
 
@@ -359,8 +370,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String txtToConvert = txt.getText().toString();
                 String txtToConvert2 = txt2.getText().toString();
-                String convertedTxt = AriCode.decode2(txtToConvert,txtToConvert2);
-                result.setText(convertedTxt);
+
+                if (txtToConvert.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Please Type Input for Decode", Toast.LENGTH_SHORT).show();
+                }
+                else if (txtToConvert2.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Please Type No of Digit", Toast.LENGTH_SHORT).show();
+                }
+
+                else{
+                    String convertedTxt = AriCode.decode2(txtToConvert, txtToConvert2);
+
+                    result.setText(convertedTxt);}
+
             }
         });
 
