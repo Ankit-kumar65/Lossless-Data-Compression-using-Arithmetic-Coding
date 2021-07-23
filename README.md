@@ -1,5 +1,7 @@
 # Lossless-Data-Compression-using-Arithmetic-Coding
 
+App Link : https://drive.google.com/drive/folders/1K2u71k6SFqkW1ZR-C7mEOr3zy5K6vDcA?usp=sharing
+
 This application implements lossless data compression using arithmetic coding rule ( Lower and upper bound method ). It encodes and decodes a given input by user using
 arithmetic coding.
 Input can be a number or a String.
